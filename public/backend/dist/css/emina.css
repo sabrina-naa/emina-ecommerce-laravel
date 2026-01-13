@@ -1,0 +1,142 @@
+/* ==============================
+   EMINA BEAUTY THEME
+   ============================== */
+:root {
+    --emina-pink: #f58b95;
+    --emina-pink-dark: #ec6f7b;
+    --emina-bg: #fff5f7;
+    --emina-text: #374151;
+}
+
+/* ==============================
+   GLOBAL
+   ============================== */
+body {
+    background-color: var(--emina-bg);
+    color: var(--emina-text);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==============================
+   TOPBAR & SIDEBAR (HILANGKAN HITAM)
+   ============================== */
+.topbar,
+.navbar,
+.navbar-header,
+.left-sidebar {
+    background-color: var(--emina-pink) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+    color: #fff !important;
+}
+
+/* ==============================
+   SIDEBAR MENU
+   ============================== */
+.sidebar-nav ul .sidebar-item .sidebar-link {
+    color: #fff !important;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 4px 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav ul .sidebar-item .sidebar-link:hover,
+.sidebar-nav ul .sidebar-item.selected > .sidebar-link {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ==============================
+   PAGE WRAPPER
+   ============================== */
+.page-wrapper {
+    background-color: var(--emina-bg);
+}
+
+/* ==============================
+   CARD / BOX
+   ============================== */
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: none;
+    font-weight: 600;
+}
+
+/* ==============================
+   TABLE (USER, PRODUK, LAPORAN)
+   ============================== */
+.table {
+    background-color: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: var(--emina-pink);
+    color: #fff;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+/* ==============================
+   BUTTON
+   ============================== */
+.btn-primary {
+    background-color: var(--emina-pink);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: var(--emina-pink-dark);
+}
+
+/* ==============================
+   FORM
+   ============================== */
+.form-control {
+    border-radius: 12px;
+    padding: 10px 14px;
+}
+
+.form-control:focus {
+    border-color: var(--emina-pink);
+    box-shadow: 0 0 0 0.15rem rgba(245, 139, 149, 0.35);
+}
+
+/* ==============================
+   DATATABLE SEARCH
+   ============================== */
+.dataTables_filter input {
+    border-radius: 12px;
+    padding: 6px 12px;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+.footer {
+    background-color: transparent;
+    color: #9ca3af;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+@media (max-width: 768px) {
+    .sidebar-nav ul .sidebar-item .sidebar-link {
+        margin: 4px;
+    }
+}

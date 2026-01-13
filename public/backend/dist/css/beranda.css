@@ -1,0 +1,57 @@
+/* WARNA UTAMA */
+:root {
+    --emina-pink: #f58b95;
+    --emina-soft: #fff1f3;
+}
+
+/* NAVBAR ATAS */
+.topbar,
+.navbar-header {
+    background-color: var(--emina-pink) !important;
+}
+
+/* SIDEBAR */
+.left-sidebar {
+    background-color: var(--emina-pink) !important;
+}
+
+/* MENU SIDEBAR */
+.sidebar-nav ul .sidebar-item.selected > .sidebar-link,
+.sidebar-nav ul .sidebar-item > .sidebar-link:hover {
+    background-color: rgba(255,255,255,0.2) !important;
+}
+
+/* CARD EMINA */
+.card-emina {
+    border-left: 5px solid var(--emina-pink);
+    border-radius: 12px;
+}
+
+/* JUDUL */
+.text-emina {
+    color: var(--emina-pink);
+    font-weight: 700;
+}
+
+.stat-card {
+    /* sebelumnya tetap, hapus cursor default */
+    cursor: pointer;
+    color: inherit; /* biar teks tetap warna sesuai tema */
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(245, 139, 149, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(245, 139, 149, 0.2);
+    text-decoration: none; /* hapus underline */
+}
+.stat-card:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 20px 40px rgba(245, 139, 149, 0.6);
+    text-decoration: none; /* tetap tanpa underline */
+}
